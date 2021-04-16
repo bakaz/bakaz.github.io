@@ -20,27 +20,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <meta name="hexo-config" content="{&quot;hostname&quot;:&quot;bakaz.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:&quot;gitalk&quot;,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null,&quot;activeClass&quot;:&quot;gitalk&quot;},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="机器学习（书）这里主要记录一点关于机器学习相关（书）的笔记 绪论部分对于任意两个算法，期望的性能是相同的 这里的主要问题在于，其的所有内容是基于随机分布的，大概就是其符合于高斯分布？ 模型评估与选择经验误差与过拟合精度&#x3D;1-错误率 这里是只得是精度而不是误分，也就是acc 在新样本上得误差为泛化误差，旧的为训练误差 P与NP问题P是在多项式时间内能解决的问题，NP为在多项式时间内验证是否正确得问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://bakaz.github.io/2021/04/05/hello-world/index.html">
+<meta property="og:title" content="机器学习（书）">
+<meta property="og:url" content="https://bakaz.github.io/2021/04/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="archive notes">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="机器学习（书）这里主要记录一点关于机器学习相关（书）的笔记 绪论部分对于任意两个算法，期望的性能是相同的 这里的主要问题在于，其的所有内容是基于随机分布的，大概就是其符合于高斯分布？ 模型评估与选择经验误差与过拟合精度&#x3D;1-错误率 这里是只得是精度而不是误分，也就是acc 在新样本上得误差为泛化误差，旧的为训练误差 P与NP问题P是在多项式时间内能解决的问题，NP为在多项式时间内验证是否正确得问题">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-05T11:14:59.270Z">
-<meta property="article:modified_time" content="2021-04-05T05:03:25.547Z">
+<meta property="article:published_time" content="2021-04-09T15:40:12.000Z">
+<meta property="article:modified_time" content="2021-04-12T14:34:45.645Z">
 <meta property="article:author" content="Bakaz Zhang">
+<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="聚类算法">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://bakaz.github.io/2021/04/05/hello-world/">
+<link rel="canonical" href="https://bakaz.github.io/2021/04/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
 
 
 
 <meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
 <meta name="hexo-config-calendar" content="">
 <script data-pjax src="/js/load-config.js"></script>
-  <title>Hello World | archive notes</title>
+  <title>机器学习（书） | archive notes</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193973259-1"></script>
     <script>
@@ -127,7 +129,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B9%A6%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">机器学习（书）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%AA%E8%AE%BA%E9%83%A8%E5%88%86"><span class="nav-number">1.1.</span> <span class="nav-text">绪论部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9"><span class="nav-number">1.2.</span> <span class="nav-text">模型评估与选择</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%8F%E9%AA%8C%E8%AF%AF%E5%B7%AE%E4%B8%8E%E8%BF%87%E6%8B%9F%E5%90%88"><span class="nav-number">1.2.1.</span> <span class="nav-text">经验误差与过拟合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#P%E4%B8%8ENP%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.2.</span> <span class="nav-text">P与NP问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.3.</span> <span class="nav-text">评估方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%95%99%E5%87%BA%E6%B3%95"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">留出法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">交叉验证法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%87%AA%E5%8A%A9%E6%B3%95"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">自助法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E5%8F%82%E4%B8%8E%E6%9C%80%E7%BB%88%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.2.4.</span> <span class="nav-text">调参与最终模型</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -203,7 +205,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -216,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          机器学习（书）
         </h1>
 
         <div class="post-meta-container">
@@ -226,9 +228,24 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-04-05 19:14:59 / 修改时间：13:03:25" itemprop="dateCreated datePublished" datetime="2021-04-05T19:14:59+08:00">2021-04-05</time>
+      <time title="创建时间：2021-04-09 23:40:12" itemprop="dateCreated datePublished" datetime="2021-04-09T23:40:12+08:00">2021-04-09</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-12 22:34:45" itemprop="dateModified" datetime="2021-04-12T22:34:45+08:00">2021-04-12</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
+        </span>
     </span>
 
   
@@ -241,20 +258,23 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        <h1 id="机器学习（书）"><a href="#机器学习（书）" class="headerlink" title="机器学习（书）"></a>机器学习（书）</h1><p>这里主要记录一点关于机器学习相关（书）的笔记</p>
+<h2 id="绪论部分"><a href="#绪论部分" class="headerlink" title="绪论部分"></a>绪论部分</h2><p>对于任意两个算法，期望的性能是相同的</p>
+<p>这里的主要问题在于，其的所有内容是基于随机分布的，大概就是其符合于高斯分布？</p>
+<h2 id="模型评估与选择"><a href="#模型评估与选择" class="headerlink" title="模型评估与选择"></a>模型评估与选择</h2><h3 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h3><p>精度=1-错误率 这里是只得是精度而不是误分，也就是acc</p>
+<p>在新样本上得误差为泛化误差，旧的为训练误差</p>
+<h3 id="P与NP问题"><a href="#P与NP问题" class="headerlink" title="P与NP问题"></a>P与NP问题</h3><p>P是在多项式时间内能解决的问题，NP为在多项式时间内验证是否正确得问题</p>
+<h3 id="评估方法"><a href="#评估方法" class="headerlink" title="评估方法"></a>评估方法</h3><p>对于这里的方式来说，主要的问题在于是使用何种的评估方法</p>
+<h4 id="留出法"><a href="#留出法" class="headerlink" title="留出法"></a>留出法</h4><p>直接将其化为两个不同的集合</p>
+<p>主要的形式为7:3这样的形式</p>
+<h4 id="交叉验证法"><a href="#交叉验证法" class="headerlink" title="交叉验证法"></a>交叉验证法</h4><p>这里的主要形式是利用交叉验证的方法进行处理</p>
+<p>也就是将顺聚集化为k个相等的子集，然后用多种的形式进行区分</p>
+<p>而其中有个较为特殊的方式为留一法</p>
+<p>也就是每次留出一个样本，然后进行处理，这样的方式一般来说较为准确</p>
+<h4 id="自助法"><a href="#自助法" class="headerlink" title="自助法"></a>自助法</h4><p>这里是利用自助采样</p>
+<p>给定包含m个样本的数据集D，对其采样进行数据集D’</p>
+<p>也就是每次对其进行抽选得到</p>
+<h3 id="调参与最终模型"><a href="#调参与最终模型" class="headerlink" title="调参与最终模型"></a>调参与最终模型</h3>
     </div>
 
     
@@ -262,15 +282,22 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"># 机器学习</a>
+              <a href="/tags/%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/" rel="tag"># 聚类算法</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2021/04/09/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="prev" title="图神经网络">
+                  <i class="fa fa-chevron-left"></i> 图神经网络
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/04/07/git/" rel="next" title="git">
-                  git <i class="fa fa-chevron-right"></i>
+                <a href="/2021/04/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="next" title="深度学习">
+                  深度学习 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -333,7 +360,7 @@ NexT.utils.loadComments('.gitalk-container', () => {
       repo        : 'bakaz.github.io',
       owner       : 'bakaz',
       admin       : ['bakaz'],
-      id          : '62664c6a228483b7ba3c83d4fdcb55a1',
+      id          : '5dd81f757123a9fea001dbc9993496fb',
       proxy       : 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
         language: '',
       distractionFreeMode: true
