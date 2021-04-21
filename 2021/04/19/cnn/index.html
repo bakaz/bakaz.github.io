@@ -20,23 +20,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <meta name="hexo-config" content="{&quot;hostname&quot;:&quot;bakaz.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:&quot;gitalk&quot;,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null,&quot;activeClass&quot;:&quot;gitalk&quot;},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="archive notes">
-<meta property="og:url" content="https://bakaz.github.io/tags/gitserver/index.html">
+<meta name="description" content="CNN原理特点稀疏权重在传统神经网络中，网络层之间输入与输出的连接关系可以由一个权值参数矩阵来表示。对于全连接网络，任意一对输入与输出神经元之间都产生交互，形成稠密的连接结构。这里面的交互是指每个单独的参数值，该参数值表示了前后层某两个神经元节点之间的交互。 在卷积神经网络中，卷积核尺度远小于输入的维度，这样每个输出神经元仅与前一层特定局部区域内的神经元存在连接权重（即产生交互），我们称这种特性为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cnn">
+<meta property="og:url" content="https://bakaz.github.io/2021/04/19/cnn/index.html">
 <meta property="og:site_name" content="archive notes">
+<meta property="og:description" content="CNN原理特点稀疏权重在传统神经网络中，网络层之间输入与输出的连接关系可以由一个权值参数矩阵来表示。对于全连接网络，任意一对输入与输出神经元之间都产生交互，形成稠密的连接结构。这里面的交互是指每个单独的参数值，该参数值表示了前后层某两个神经元节点之间的交互。 在卷积神经网络中，卷积核尺度远小于输入的维度，这样每个输出神经元仅与前一层特定局部区域内的神经元存在连接权重（即产生交互），我们称这种特性为">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-19T12:05:37.000Z">
+<meta property="article:modified_time" content="2021-04-19T12:26:41.945Z">
 <meta property="article:author" content="Bakaz Zhang">
+<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="cnn">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://bakaz.github.io/tags/gitserver/">
+<link rel="canonical" href="https://bakaz.github.io/2021/04/19/cnn/">
 
 
 
-<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;zh-CN&quot;}">
+<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
 <meta name="hexo-config-calendar" content="">
 <script data-pjax src="/js/load-config.js"></script>
-  <title>标签: gitserver | archive notes</title>
+  <title>cnn | archive notes</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193973259-1"></script>
     <script>
@@ -110,7 +116,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -123,6 +129,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CNN"><span class="nav-number">1.</span> <span class="nav-text">CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%90%86"><span class="nav-number">1.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">特点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A8%80%E7%96%8F%E6%9D%83%E9%87%8D"><span class="nav-number">1.2.1.</span> <span class="nav-text">稀疏权重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E5%85%B1%E4%BA%AB"><span class="nav-number">1.2.2.</span> <span class="nav-text">参数共享</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%89%E5%8F%98%E8%A1%A8%E7%A4%BA"><span class="nav-number">1.2.3.</span> <span class="nav-text">等变表示</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -187,51 +194,108 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">gitserver
-          <small>标签</small>
-        </h2>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/19/cnn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bakaz Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="archive notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          cnn
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-04-19 20:05:37 / 修改时间：20:26:41" itemprop="dateCreated datePublished" datetime="2021-04-19T20:05:37+08:00">2021-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h3 id="稀疏权重"><a href="#稀疏权重" class="headerlink" title="稀疏权重"></a>稀疏权重</h3><p>在传统神经网络中，网络层之间输入与输出的连接关系可以由一个权值参数矩阵来表示。对于全连接网络，任意一对输入与输出神经元之间都产生交互，形成稠密的连接结构。这里面的<strong>交互</strong>是指每个单独的参数值，该参数值表示了前后层某两个神经元节点之间的交互。</p>
+<p>在卷积神经网络中，<strong>卷积核尺度远小于输入的维度</strong>，这样<strong>每个输出神经元仅与前一层特定局部区域内的神经元存在连接权重（即产生交互）</strong>，我们称这种特性为<strong>稀疏交互</strong>。</p>
+<p>主要的目的是需要实现其的部分特征，而不是全部的特征</p>
+<h3 id="参数共享"><a href="#参数共享" class="headerlink" title="参数共享"></a>参数共享</h3><p>参数共享是指在同一个模型的不同模块中使用相同的参数。卷积运算中的参数共享让网络只需要学一个参数集合，而不是对于每一位置都需要学习一个单独的参数集合</p>
+<p>参数共享的<strong>物理意义</strong>：使得卷积层具有平移等变性。在第三个特点中会谈到</p>
+<p>显然，我们可以看到，卷积神经网络在存储大小和统计效率方面极大地优于传统的使用矩阵乘法的神经网络</p>
+<h3 id="等变表示"><a href="#等变表示" class="headerlink" title="等变表示"></a>等变表示</h3><p>假如图像中有一只猫，那么无论它出现在图像中的任何位置，我们都应该将它识别为猫，也就是说神经网络的输出对于平移变换来说应当是等变的。特别地，当函数f(x)与g(x)满足f(g(x))=g(f(x))时，我们称f(x)关于变换g具有等变性。在猫的图片上先进行卷积，再向右平移l像素的输出，与先将图片向右平移l像素再进行卷积操作的输出结果是相等的。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-07T17:43:33+08:00"
-              content="2021-04-07">
-          04-07
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/07/git/" itemprop="url">
-            <span itemprop="name">git</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"># 机器学习</a>
+              <a href="/tags/cnn/" rel="tag"># cnn</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/04/16/10-1016-j-energy-2021-120403/" rel="prev" title="10.1016_j.energy.2021.120403">
+                  <i class="fa fa-chevron-left"></i> 10.1016_j.energy.2021.120403
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/04/19/kaggle-pre/" rel="next" title="kaggle_pre">
+                  kaggle_pre <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
-<script src="/js/comments.js"></script>
+
+
+
+
+
+    <div class="comments gitalk-container"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -270,6 +334,26 @@
 
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '4376bb692faea87d94ab',
+      clientSecret: '1de5eacd0e3e9600703353141250cd9f0d3d26e3',
+      repo        : 'bakaz.github.io',
+      owner       : 'bakaz',
+      admin       : ['bakaz'],
+      id          : '7f015a87e0973ef27401c7cd67867972',
+      proxy       : 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>

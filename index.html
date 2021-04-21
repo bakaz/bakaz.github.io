@@ -136,7 +136,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -149,7 +149,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -197,6 +197,231 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/19/kaggle-pre/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bakaz Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="archive notes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/19/kaggle-pre/" class="post-title-link" itemprop="url">kaggle_pre</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-04-19 23:30:47 / 修改时间：23:44:37" itemprop="dateCreated datePublished" datetime="2021-04-19T23:30:47+08:00">2021-04-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a><strong>数据清洗</strong></h2><ul>
+<li><p>缺失值插补</p>
+</li>
+<li><ul>
+<li>均值、中位数、众数插补</li>
+<li>固定值插补</li>
+<li>最近邻插补</li>
+</ul>
+</li>
+<li><p>离群值</p>
+</li>
+<li><ul>
+<li>直接删除</li>
+<li>替换法</li>
+</ul>
+</li>
+<li><p>异常、冗余值</p>
+</li>
+<li><ul>
+<li>直接删除</li>
+</ul>
+</li>
+<li><p>小技巧：用训练集数据学习一个模型，然后用它预测训练集的标签，删除预测结果偏差较大的样本</p>
+</li>
+</ul>
+<h2 id="数据集成"><a href="#数据集成" class="headerlink" title="数据集成"></a><strong>数据集成</strong></h2><ul>
+<li><p>多表数据整合</p>
+</li>
+<li><ul>
+<li>一对一</li>
+<li>一对多</li>
+<li>多对一</li>
+<li>多对多</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据重采样"><a href="#数据重采样" class="headerlink" title="数据重采样"></a><strong>数据重采样</strong></h2><ul>
+<li><p>滑窗法：</p>
+</li>
+<li><ul>
+<li>对于时间序列数据，选取不同的时间窗间隔，可以得到多份训练数据集</li>
+<li>该方法可以增加训练样本，也方便做交叉验证实验</li>
+</ul>
+</li>
+<li><p>非平衡重采样：调整正负样本量</p>
+</li>
+<li><ul>
+<li>欠采样</li>
+<li>过采样</li>
+<li>组合采样</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据变换"><a href="#数据变换" class="headerlink" title="数据变换"></a><strong>数据变换</strong></h2><ul>
+<li><p>连续变量离散化（分箱）</p>
+</li>
+<li><ul>
+<li>等频</li>
+<li>等宽</li>
+<li>聚类</li>
+</ul>
+</li>
+<li><p>离散变量编码</p>
+</li>
+<li><ul>
+<li>One-hot Encoding</li>
+<li>Label Encoding</li>
+</ul>
+</li>
+<li><p>长尾分布</p>
+</li>
+<li><ul>
+<li>Ln、Log</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据规范化"><a href="#数据规范化" class="headerlink" title="数据规范化"></a><strong>数据规范化</strong></h2><ul>
+<li>Min-Max</li>
+<li>Z-score</li>
+<li>MaxAbs</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/19/cnn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bakaz Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="archive notes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/19/cnn/" class="post-title-link" itemprop="url">cnn</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-04-19 20:05:37 / 修改时间：20:26:41" itemprop="dateCreated datePublished" datetime="2021-04-19T20:05:37+08:00">2021-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h3 id="稀疏权重"><a href="#稀疏权重" class="headerlink" title="稀疏权重"></a>稀疏权重</h3><p>在传统神经网络中，网络层之间输入与输出的连接关系可以由一个权值参数矩阵来表示。对于全连接网络，任意一对输入与输出神经元之间都产生交互，形成稠密的连接结构。这里面的<strong>交互</strong>是指每个单独的参数值，该参数值表示了前后层某两个神经元节点之间的交互。</p>
+<p>在卷积神经网络中，<strong>卷积核尺度远小于输入的维度</strong>，这样<strong>每个输出神经元仅与前一层特定局部区域内的神经元存在连接权重（即产生交互）</strong>，我们称这种特性为<strong>稀疏交互</strong>。</p>
+<p>主要的目的是需要实现其的部分特征，而不是全部的特征</p>
+<h3 id="参数共享"><a href="#参数共享" class="headerlink" title="参数共享"></a>参数共享</h3><p>参数共享是指在同一个模型的不同模块中使用相同的参数。卷积运算中的参数共享让网络只需要学一个参数集合，而不是对于每一位置都需要学习一个单独的参数集合</p>
+<p>参数共享的<strong>物理意义</strong>：使得卷积层具有平移等变性。在第三个特点中会谈到</p>
+<p>显然，我们可以看到，卷积神经网络在存储大小和统计效率方面极大地优于传统的使用矩阵乘法的神经网络</p>
+<h3 id="等变表示"><a href="#等变表示" class="headerlink" title="等变表示"></a>等变表示</h3><p>假如图像中有一只猫，那么无论它出现在图像中的任何位置，我们都应该将它识别为猫，也就是说神经网络的输出对于平移变换来说应当是等变的。特别地，当函数f(x)与g(x)满足f(g(x))=g(f(x))时，我们称f(x)关于变换g具有等变性。在猫的图片上先进行卷积，再向右平移l像素的输出，与先将图片向右平移l像素再进行卷积操作的输出结果是相等的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/16/10-1016-j-energy-2021-120403/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -220,10 +445,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-04-16 12:55:23 / 修改时间：15:15:46" itemprop="dateCreated datePublished" datetime="2021-04-16T12:55:23+08:00">2021-04-16</time>
+      <time title="创建时间：2021-04-16 12:55:23" itemprop="dateCreated datePublished" datetime="2021-04-16T12:55:23+08:00">2021-04-16</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-19 20:00:22" itemprop="dateModified" datetime="2021-04-19T20:00:22+08:00">2021-04-19</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -254,7 +485,53 @@
 <p>也就是其的原油价格等情况会对全球经济产生重大影响。预测影响国家社会的稳定。经济发展的油价波动可以帮助政府制定政策</p>
 <p>也就是其利用了多种模型来进行数值处理</p>
 <p>其采用了VTFM方法进行处理</p>
-<h3 id="methodology"><a href="#methodology" class="headerlink" title="methodology"></a>methodology</h3><h3 id="Experiment-study"><a href="#Experiment-study" class="headerlink" title="Experiment study"></a>Experiment study</h3><h3 id="Conclusion-and-future-research"><a href="#Conclusion-and-future-research" class="headerlink" title="Conclusion and future research"></a>Conclusion and future research</h3><h2 id="数据模型等记录"><a href="#数据模型等记录" class="headerlink" title="数据模型等记录"></a>数据模型等记录</h2><h2 id="其他等记录"><a href="#其他等记录" class="headerlink" title="其他等记录"></a>其他等记录</h2><p>在前面的intro的理论部分，多引用一些其他的文献资料来进行说明</p>
+<p>进一步处理了在线媒体新闻，并且比较了各种预测技术</p>
+<p>利用这样的方法来表现其之间的关系</p>
+<p>在后面说明了这里是利用历史数据对产量进行预测，也就是利用了模型来说明其的产量</p>
+<p>说明了过去期间有谁用相同的模型来进行相关产业的预测，同时对模型的领域进行说明</p>
+<h3 id="methodology"><a href="#methodology" class="headerlink" title="methodology"></a>methodology</h3><p>这里的主要过程是说明了用了哪些方法与模型</p>
+<h4 id="CNN与文本分类"><a href="#CNN与文本分类" class="headerlink" title="CNN与文本分类"></a>CNN与文本分类</h4><p>在这里对于CNN的基础之上（主要是text-cnn）</p>
+<p>对文本中常出现的标点，停止词，进行过滤 大概是类似于the in is</p>
+<p>这里的过程可能是通过对进行词云以后，进行手动观测一下后再看一看是否合理</p>
+<p>这里所描述的过程大部分都是在实际过程中需要的情况，也就是将实际中所应用的程序写下来</p>
+<h4 id="预测模型"><a href="#预测模型" class="headerlink" title="预测模型"></a>预测模型</h4><p>这里列举了本次研究所需要的模型方面，在这里选择了什么模型对其进行处理</p>
+<p>也就是在进行了第一步的文本处理之后所应用的模型</p>
+<p>这里主要采用了以下几种：</p>
+<p>BP,MLR,SVM,LSTM这几种方法</p>
+<p>在这里对每种方法进行了以下说明，有的配个图，配一个看起来复杂的公式就还行了</p>
+<h3 id="Experiment-study"><a href="#Experiment-study" class="headerlink" title="Experiment study"></a>Experiment study</h3><h4 id="数据描述"><a href="#数据描述" class="headerlink" title="数据描述"></a>数据描述</h4><p>在这部分主要是描述是如何进行实验的</p>
+<p>这里说明了实验的环境以及实验的场合</p>
+<p>同时，在这里说明数据集的部分数据，可以利用其的数据进行处理</p>
+<p>在这里的描述中，可以添加词云，添加其他内容来进行辅助说明数据的状况</p>
+<p>同时对于数据集，还说明了在这里如何进行数据的切分，也就是如何切分出训练，测试以及验证集</p>
+<p>MAPE为平均绝对百分比误差，RMSE为均方根误差，MAE为平均绝对误差</p>
+<h4 id="油价预测"><a href="#油价预测" class="headerlink" title="油价预测"></a>油价预测</h4><p>在这里说明了进行了如何的操作，令其从原理的变成结果</p>
+<p>在这里说一些词云的情况，这里的关键词的情况进行继续</p>
+<p>在这里使用了tfeldf的权重对不同新闻的单词进行排序</p>
+<p>在这里通过其进行进一步分析</p>
+<p>通过这样的方法将其在相对的范围内选择最好的关键字进行处理</p>
+<p>在选好了以后再用统计方法说明其是可行的</p>
+<p>预测模型的性能由那个统计标准来统计，也就是利用了相关的数据</p>
+<h4 id="结果与讨论"><a href="#结果与讨论" class="headerlink" title="结果与讨论"></a>结果与讨论</h4><p>这里主要方面就是其的结果与讨论</p>
+<p>对于上面用到的所有方法，对其进行假设检验，来验证其是否符合对应的结果</p>
+<p>然后对其的所有参数，适应一下自己的性能相关，来进行判断与调优</p>
+<p>这里的baseline为单纯的使用历史油价来进行计算，而不是利用了其他方法进行辅助的结算</p>
+<p>MIV方法为mean impact value，其广泛应用于神经网络模型变量影响大小的平均影响值</p>
+<p>在这里主要要求的东西就是用什么的统计方法来描述，也就是利用了什么情况来进行说明</p>
+<p>对于这里的不同情况来说，最主要的问题是需要了解其中所使用的统计方法的作用</p>
+<p>这里还对了不同模型在不同输入之下的性能比较。利用具有文本特征和历史数据的bpnn模型获得最佳的效果</p>
+<h4 id="文本挖掘的结果以及相关显示"><a href="#文本挖掘的结果以及相关显示" class="headerlink" title="文本挖掘的结果以及相关显示"></a>文本挖掘的结果以及相关显示</h4><p>这里就说明了其与原油相关的结果，其的分类准确率等情况</p>
+<h3 id="Conclusion-and-future-research"><a href="#Conclusion-and-future-research" class="headerlink" title="Conclusion and future research"></a>Conclusion and future research</h3><h2 id="数据模型等记录"><a href="#数据模型等记录" class="headerlink" title="数据模型等记录"></a>数据模型等记录</h2><h3 id="CNN与文本分类-1"><a href="#CNN与文本分类-1" class="headerlink" title="CNN与文本分类"></a>CNN与文本分类</h3><h3 id="预测模型-1"><a href="#预测模型-1" class="headerlink" title="预测模型"></a>预测模型</h3><h3 id="统计方法使用"><a href="#统计方法使用" class="headerlink" title="统计方法使用"></a>统计方法使用</h3><p>这里使用了哪些统计方法来统计</p>
+<p>MAE,MAPE,RMSE</p>
+<p>这些方法主要是统计实际值与预测之间差异的基础</p>
+<p>使用了jarque-bera检验来说明其是否符合正态分布</p>
+<p>Augmented Dickey-Fuller特使主要是来证明其是否有非平稳性</p>
+<p>MIV方法统计每个预测性的重要性，用于定量分析各预测因子的相对重要性</p>
+<p>F-measure可以作为其数据的额外补充，可以理解为TP与RECALL等情况的值，进一步的处理</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/40017350">https://zhuanlan.zhihu.com/p/40017350</a></p>
+<p>这里是用于盘读研时间序列的平稳性，用这种方法来进行数量的说明</p>
+<h2 id="其他等记录"><a href="#其他等记录" class="headerlink" title="其他等记录"></a>其他等记录</h2><p>在前面的intro的理论部分，多引用一些其他的文献资料来进行说明</p>
+<p>对于模型的介绍方面，不算太详细的介绍了数学方法问题，而是更详细的介绍了其的方法是啥，以及在其中做出了大概怎样的改进处理</p>
 
       
     </div>
@@ -387,10 +664,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-04-12 09:08:20 / 修改时间：10:20:49" itemprop="dateCreated datePublished" datetime="2021-04-12T09:08:20+08:00">2021-04-12</time>
+      <time title="创建时间：2021-04-12 09:08:20" itemprop="dateCreated datePublished" datetime="2021-04-12T09:08:20+08:00">2021-04-12</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-21 19:15:49" itemprop="dateModified" datetime="2021-04-21T19:15:49+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -416,7 +699,81 @@
 
 
 
-<h2 id="安装centos7"><a href="#安装centos7" class="headerlink" title="安装centos7"></a>安装centos7</h2><p>因为这里主要的目的是设置</p>
+<h2 id="安装centos7"><a href="#安装centos7" class="headerlink" title="安装centos7"></a>安装centos7</h2><p>因为这里主要的目的是设置centos7，就直接进行上传就可以</p>
+<p>这里就安装了server with gui的版本</p>
+<h2 id="安装ansible"><a href="#安装ansible" class="headerlink" title="安装ansible"></a>安装ansible</h2><p>这里为了方便处理，直接加了ansible</p>
+<h3 id="epel"><a href="#epel" class="headerlink" title="epel"></a>epel</h3><p><code> yum install epel-release</code></p>
+<p>直接用这样的方法安装epel就行</p>
+<h3 id="安装ansible-1"><a href="#安装ansible-1" class="headerlink" title="安装ansible"></a>安装ansible</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install ansible</span><br></pre></td></tr></table></figure>
+
+<p>直接用这样的方法就能安装ansible了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;ansible&#x2F;hosts</span><br></pre></td></tr></table></figure>
+
+<p>在这里面设置一下ansible自己的host，格式如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[nodes]</span><br><span class="line">ip1</span><br><span class="line">ip2</span><br><span class="line">hostname1</span><br><span class="line">hostname2</span><br></pre></td></tr></table></figure>
+
+<p>其中nodes是每个组名，其他的就是组内的东西</p>
+<h2 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
+
+<p>然后直接敲回车，生成公钥</p>
+<h3 id="修改hosts"><a href="#修改hosts" class="headerlink" title="修改hosts"></a>修改hosts</h3><p>设置好主机名以及自己的情况</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+
+<p>将自己的公钥复制到其他的机子上，每台都执行一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id nodesip</span><br></pre></td></tr></table></figure>
+
+<p>在主节点上把hosts复制到其他节点上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ansible nodes -m copy -a &quot;src&#x3D;&#x2F;etc&#x2F;hosts dest&#x3D;&#x2F;etc&#x2F;hosts&quot;</span><br></pre></td></tr></table></figure>
+
+<p>通过这样的方法复制过去</p>
+<p>如果不通的话看一下是哪个地方有问题</p>
+<h2 id="检查时间"><a href="#检查时间" class="headerlink" title="检查时间"></a>检查时间</h2><p>由于这里是通过虚拟机的，所以不用再ntp同步时间，不然还需要ntp同步一下时间</p>
+<p>这里直接用date来检查一下所有的时间对没对准就行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ansible nodes -m shell -a &quot;date&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除自带的java"><a href="#删除自带的java" class="headerlink" title="删除自带的java"></a>删除自带的java</h2><p>因为centos都是自带的jdk，于是在这里先删了自己的jdk就可以了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br><span class="line">rpm -qa | grep jdk</span><br></pre></td></tr></table></figure>
+
+<p>在这里查看自己装的是哪个版本的jdk，然后删掉就行了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps java-xxx</span><br></pre></td></tr></table></figure>
+
+<h2 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h2><p>就先传到本机，然后接着继续复制到虚拟机就可以了</p>
+<p>在这个过程中也需要配置主机与虚拟机之间的ssh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp jdk-8u291-linux-x64.tar.gz root@192.168.1.2:&#x2F;root</span><br></pre></td></tr></table></figure>
+
+<p>然后把资源分发到每个主机就行</p>
+<h2 id="安装java"><a href="#安装java" class="headerlink" title="安装java"></a>安装java</h2><p>在这里的主要内容就是安装Java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ansible nodes -m shell -a &quot;tar -xzvf jdk.tar.gz -C &#x2F;usr&#x2F;java&quot;</span><br><span class="line"># 如果没有文件夹的话 用mkdir建一个就行了</span><br><span class="line">ansible nodes -m shell -a &quot;mkdir &#x2F;usr&#x2F;java&quot;</span><br></pre></td></tr></table></figure>
+
+<p>导入环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;profile</span><br><span class="line">export JAVA_HOME&#x3D;&#x2F;usr&#x2F;java&#x2F;jdk1.8.0_291</span><br><span class="line">export PATH&#x3D;$JAVA_HOME&#x2F;bin:$PATH</span><br><span class="line">export CLASSPATH&#x3D;.:$JAVA_HOME&#x2F;lib&#x2F;dt.jar:$JAVA_HOME&#x2F;lib&#x2F;tools.jar</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装hadoop"><a href="#安装hadoop" class="headerlink" title="安装hadoop"></a>安装hadoop</h2><p>设置文件夹位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir &#x2F;local&#x2F;hadoop</span><br></pre></td></tr></table></figure>
+
+<p>然后用解压文件的方法将文件解压到该文件夹下面</p>
+<p>这里同时要注意将hadoop的目录也导入环境变量中，这样以后处理会比较方便</p>
+<p>与java中的导入方法相同</p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>对于非安全的操作之下，可以全部用root来进行执行下面的指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">slave</span><br><span class="line">core-site.xml</span><br><span class="line">hdfs-site.xml</span><br><span class="line">yarn-site.xml</span><br><span class="line">mapred-site.xml</span><br></pre></td></tr></table></figure>
+
+<h4 id="slave"><a href="#slave" class="headerlink" title="slave"></a>slave</h4><p>对于这里的过程是对slave节点进行分配，可以理解为hosts？其他的部分暂时没处理</p>
+<h4 id="core-site-xml"><a href="#core-site-xml" class="headerlink" title="core-site.xml"></a>core-site.xml</h4><p>在这里要创建hadoop的临时文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ansible nodes -m shell -a &quot;mkdir &#x2F;usr&#x2F;local&#x2F;hadoop&#x2F;tmp&quot;</span><br></pre></td></tr></table></figure>
+
+<p>修改core-site.xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;hadoop.tmp.dir&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;&#x2F;usr&#x2F;local&#x2F;hadoop&#x2F;tmp&lt;&#x2F;value&gt;</span><br><span class="line">    &lt;description&gt;temp dir&lt;&#x2F;description&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;fs.defaultFS&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;hdfs:&#x2F;&#x2F;hadoop01.hadoop:9000&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;io.file.buffer.size&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;131072&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="hdfs-site-xml"><a href="#hdfs-site-xml" class="headerlink" title="hdfs-site.xml"></a>hdfs-site.xml</h4><p>在这里要创建hadoop的存储文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ansible nodes -m shell -a &quot;mkdir &#x2F;usr&#x2F;local&#x2F;hadoop&#x2F;hdfs&#x2F;name&quot;</span><br><span class="line">ansible nodes -m shell -a &quot;mkdir &#x2F;usr&#x2F;local&#x2F;hadoop&#x2F;hdfs&#x2F;data&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.namenode.name.dir&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;file:&#x2F;usr&#x2F;local&#x2F;hadoop&#x2F;hdfs&#x2F;name&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.datanode.data.dir&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;file:&#x2F;usr&#x2F;local&#x2F;hadoop&#x2F;hdfs&#x2F;data&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.blocksize&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;134217728&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.namenode.handler.count&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;10&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">   &lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.replication&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;1&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="yarn-site-xml"><a href="#yarn-site-xml" class="headerlink" title="yarn-site.xml"></a>yarn-site.xml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;  </span><br><span class="line">    &lt;property&gt;  </span><br><span class="line">        &lt;name&gt;yarn.nodemanager.aux-services&lt;&#x2F;name&gt;  </span><br><span class="line">        &lt;value&gt;mapreduce_shuffle&lt;&#x2F;value&gt;  </span><br><span class="line">    &lt;&#x2F;property&gt;  </span><br><span class="line">&lt;&#x2F;configuration&gt;  </span><br></pre></td></tr></table></figure>
+
+<h4 id="marped-site-xml"><a href="#marped-site-xml" class="headerlink" title="marped-site.xml"></a>marped-site.xml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">    &lt;name&gt;mapreduce.framework.name&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;yarn&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="复制-1"><a href="#复制-1" class="headerlink" title="复制"></a>复制</h3><p>将设置好的hadoop分发到各个节点</p>
 
       
     </div>
@@ -537,7 +894,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 22:34:45" itemprop="dateModified" datetime="2021-04-12T22:34:45+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-20 23:18:24" itemprop="dateModified" datetime="2021-04-20T23:18:24+08:00">2021-04-20</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -573,9 +930,94 @@
 <p>而其中有个较为特殊的方式为留一法</p>
 <p>也就是每次留出一个样本，然后进行处理，这样的方式一般来说较为准确</p>
 <h4 id="自助法"><a href="#自助法" class="headerlink" title="自助法"></a>自助法</h4><p>这里是利用自助采样</p>
-<p>给定包含m个样本的数据集D，对其采样进行数据集D’</p>
+<p>给定包含m个样本的数据集D，对其采样进行数据集D</p>
 <p>也就是每次对其进行抽选得到</p>
-<h3 id="调参与最终模型"><a href="#调参与最终模型" class="headerlink" title="调参与最终模型"></a>调参与最终模型</h3>
+<h4 id="调参与最终模型"><a href="#调参与最终模型" class="headerlink" title="调参与最终模型"></a>调参与最终模型</h4><p>主要就是将训练数据分类以后，然后基于验证集的性能来进行模型选择和调参</p>
+<h3 id="性能度量"><a href="#性能度量" class="headerlink" title="性能度量"></a>性能度量</h3><p>对于学习器的泛化性能，需要用怎样的方法来进行性能度量</p>
+<p>常用的方法是均方误差，也就是mse</p>
+<h4 id="错误率与精度"><a href="#错误率与精度" class="headerlink" title="错误率与精度"></a>错误率与精度</h4><p>错误率的定义为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">其中分类不正确的样本占总样本的比例</span><br><span class="line"></span><br><span class="line">而这里来说，精度为1－错误率</span><br></pre></td></tr></table></figure>
+
+<p>而这里还有查准率，查全率以及f1</p>
+<p>其中查准率为 tp/(tp+fp)</p>
+<p>查全率为 tp/(tp+fn)</p>
+<p>其中查准为准确率，查全为召回率</p>
+<p>其中的tf是预测的正确与错误，pn为预测的结果是阳性还是阴性</p>
+<p>所以recall就是tp与fn作为分母的和，tp与fn的和为p（可以表示为分类器对正例的识别能力，就是灵敏度）</p>
+<p>对于这里来说，f1是查全与查准的调和评价来定义的</p>
+<p>在这里的f1可以理解为2＊tp／（样例总数＋tp－tn）</p>
+<p>对于有的情况下，精确是更好的查到一定要准确找对</p>
+<p>查全为就算错了也不能放过</p>
+<h4 id="roc与aoc"><a href="#roc与aoc" class="headerlink" title="roc与aoc"></a>roc与aoc</h4><p>这里是因为在平时的判断过程中，比起使用其中的一部分，更有可能是利用了查准或者recall的一部分，于是会在曲线中选择前面或者后面的一部分</p>
+<p>roc曲线就是在这个角度出发研究学习器泛化性能的工具</p>
+<p>roc的纵轴为tpr 也就是recall</p>
+<p>横轴为fpr 就是fp/(fp+tn)</p>
+<p>而auc为在roc曲线下的面积，这里从一般意义来说，越大越能单纯的说明其的模型质量越好</p>
+<h4 id="代价敏感错误率与代价曲线"><a href="#代价敏感错误率与代价曲线" class="headerlink" title="代价敏感错误率与代价曲线"></a>代价敏感错误率与代价曲线</h4><p>如果犯了一次的错误，其的错误可能会比预想中的更大</p>
+<p>这里这个狐妖是发呢称两种不同的情况，分别是fp与fn这两种，对于这两种分别进行权重的惩罚以后，再除以总的值。</p>
+<h3 id="比较检验"><a href="#比较检验" class="headerlink" title="比较检验"></a>比较检验</h3><p>这里的主要目的是比较出对应的结果，也就是得到的结果的情况。对于这里的主要麻烦在于，以什么作为一个基线</p>
+<p>这里可以区分出三个不同的情况</p>
+<p>1.比较泛化性能</p>
+<p>2.测试样例不同导致的不同</p>
+<p>3.机器学习算法本身具有随机性</p>
+<h4 id="假设检验"><a href="#假设检验" class="headerlink" title="假设检验"></a>假设检验</h4><p>这里的假设检验是对学习器泛化错误率的某种判断或者猜想</p>
+<p>在这里可以用不同方法进行假设检验</p>
+<h5 id="学习器分类"><a href="#学习器分类" class="headerlink" title="学习器分类"></a>学习器分类</h5><p>对于单学习器</p>
+<p>对于一次留出法来说，可以二项检验</p>
+<p>对于多次留出法来说，可以采用t检验</p>
+<p>对于多个不同的学习器（两种）</p>
+<p>交叉验证t检验（k折交叉法检验）</p>
+<p>McNemar检验（留出法的检验）</p>
+<p>这里是比较多种算法</p>
+<p>Friedman检验与Nemenyi后续检验</p>
+<p>这里的firedman检验是先对算法进行一下求解</p>
+<p>也就是对于其的第一个部分，也就是其关于数据集的部分，直接采用数据来求解其值的方向</p>
+<p>最简单的方法就是直接进行测试性能的由好到坏进行排序，对其的算法进行一下求解的过程，来判断其的性能是否相同</p>
+<p>这里会判断其之间的不同情况，也就是判断出其有一定的区间之后，还需要对其的结果的区分进行显著性检验。</p>
+<p>也就是需要知道a比b牛逼出一个境界才可以</p>
+<h3 id="偏差与方差"><a href="#偏差与方差" class="headerlink" title="偏差与方差"></a>偏差与方差</h3><p>对于方差偏差的分解，可以了解到其为什么具有这样的性能</p>
+<p>这里可以将泛化误差分解为偏差、方差和噪音之和</p>
+<p>这里的yd为数据集中的标记 y为x的真实标记</p>
+<p>f(x;D)为训练集D上学得模型f在x上的预测输出</p>
+<p>方差：<code>var(x) = Ed[(f(x:D)-f(x))^2]</code> 也就是预测输出减去预测结果的期望</p>
+<p>噪音为 e^2 = Ed[(yD-y)^2] 这里是数据集中的标记与实际不服</p>
+<p>而偏差为期望输出与真实标记的差别</p>
+<p>也就是bias^2（x）= （f(x)-y）^2</p>
+<p>是这个地方的结果</p>
+<p>而泛化误差可以理解为偏差，方差和噪音之和</p>
+<p>偏差度量了学习算法本身的拟合能力</p>
+<p>方差为同样大小的训练集的变动导致的学习性能的差距</p>
+<p>而偏差与方差是有冲突的</p>
+<p>偏差是因为拟合能力不够强</p>
+<p>而方差是因为拟合能力过强，从而导致学习器发生了显著变化，即将发生过拟合</p>
+<h2 id="线性模型"><a href="#线性模型" class="headerlink" title="线性模型"></a>线性模型</h2><h3 id="基本形式"><a href="#基本形式" class="headerlink" title="基本形式"></a>基本形式</h3><p>线性模型有很好的可解释性</p>
+<h3 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h3><p>这里的主要方法是让均方误差最小化</p>
+<p><code> argmin求和（fx-y）^2</code></p>
+<p>均方误差可以进行相关内容的求解</p>
+<h4 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h4><p>在实际使用中，有时候变量的维度会超过其的例子数量，从而导致其产生问题</p>
+<p>比如在实际的过程之中，能预估其的偏好是哪种偏好，基于这个偏好来进行进一步的解释</p>
+<p>如果用更加通用点的东西来说的话，就是在wx+b外面套上一个函数，这里叫做广义线性模型</p>
+<h3 id="对数几率函数"><a href="#对数几率函数" class="headerlink" title="对数几率函数"></a>对数几率函数</h3><p>对数几率函数是一种sigmoid函数，也就是1/(1+e^-z)</p>
+<p>对于这里的函数来说</p>
+<p>这里就是将其上部分化作其的外侧的函数</p>
+<p>则可以化作ln y/(1-y）= w^t x+b</p>
+<p>由于上下侧分别为y与1-y，则这里可以被看成对数回归</p>
+<p>在这里就会用到<strong>极大似然法</strong>也就是将其的对率模型最大化</p>
+<h3 id="LDA"><a href="#LDA" class="headerlink" title="LDA"></a>LDA</h3><p>LDA为线性判别分析，也可以为特殊情况下的fisher判别分析</p>
+<p>可以理解为将一个平面内的东西投影到一个直线上</p>
+<p>这里的主要目的是让协方差尽可能小，而两个类中心的距离尽可能大</p>
+<p>这里的主要目的是最大化LDA其中的一个值</p>
+<p>这东西被称作广义瑞利商</p>
+<h4 id="空间向量表达"><a href="#空间向量表达" class="headerlink" title="空间向量表达"></a>空间向量表达</h4><p>向量为排成一列的数字 实际为有向线段</p>
+<p>矩阵为排成矩形的数字 实际为空间到空间的映射</p>
+<p>用向量表示线段的时候，可以将其的维度看成相关的点，然后就是会变成其的位置</p>
+<p><strong>矩阵就是映射</strong></p>
+<p>矩阵的乘积就是映射的合成</p>
+<p>矩阵乘积ba就是先将矩阵经过a的映射，再经过b的映射</p>
+<p>矩阵的乘方就是映射的迭代</p>
+<p>零矩阵就是所有的向量映射到零点的映射</p>
+<p>转置矩阵是什么情况</p>
+
       
     </div>
 
@@ -860,202 +1302,6 @@
 <h3 id="path"><a href="#path" class="headerlink" title="path"></a>path</h3><h3 id="UNIX-only"><a href="#UNIX-only" class="headerlink" title="UNIX only"></a>UNIX only</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/07/regex/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Bakaz Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="archive notes">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/07/regex/" class="post-title-link" itemprop="url">regex</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-07 19:54:53" itemprop="dateCreated datePublished" datetime="2021-04-07T19:54:53+08:00">2021-04-07</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-08 13:24:47" itemprop="dateModified" datetime="2021-04-08T13:24:47+08:00">2021-04-08</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h1><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>主要记住其中哪些部分是单字符</p>
-<p>. 是用来单字符的，使用[.]可以用来表示句号</p>
-<p>[]是用来表示匹配括号内的字符</p>
-<p>[^]用来表示否定的字符集</p>
-<p>*+?分别用来表示0+，1+与[0,1]这几个</p>
-<p>{n,m}这里可以用在部分的情况之后，用来表示其前面有多少个字符</p>
-<p>()用来表示字符集，这里的部分可以看作多字符的情况</p>
-<p>|用来表示或</p>
-<p>\用来表示转义字符</p>
-<p>^,$分别用来表示开始行与结束行</p>
-<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>对于转义字符来说，这里主要的形式就是直接转义</p>
-<p>\后市小写就是本身，大写就是排除，基于这个进行</p>
-<h4 id="零宽断言"><a href="#零宽断言" class="headerlink" title="零宽断言"></a>零宽断言</h4><p>这里的正负用来表示是或者非，先行后发用来表示这个的前面还是后面出现这个内容</p>
-<p>(?=)正先</p>
-<p>(?!)负先</p>
-<p>(?&lt;=)正后</p>
-<p>(?&lt;!)负后</p>
-<h2 id="examples"><a href="#examples" class="headerlink" title="examples"></a>examples</h2><p>pandas读取其中的正则的话，用的是extract，其他都类似，就是在字符串前面加上r</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="部分工作思路"><a href="#部分工作思路" class="headerlink" title="部分工作思路"></a>部分工作思路</h2><h3 id="切出想要的部分内容"><a href="#切出想要的部分内容" class="headerlink" title="切出想要的部分内容"></a>切出想要的部分内容</h3>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://bakaz.github.io/2021/04/07/pandas/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Bakaz Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="archive notes">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/07/pandas/" class="post-title-link" itemprop="url">pandas</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-07 19:35:13" itemprop="dateCreated datePublished" datetime="2021-04-07T19:35:13+08:00">2021-04-07</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-08 23:10:06" itemprop="dateModified" datetime="2021-04-08T23:10:06+08:00">2021-04-08</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="pandas操作"><a href="#pandas操作" class="headerlink" title="pandas操作"></a>pandas操作</h1><p>对于这里的部分 主要进行一些简单的pandas操作的记录</p>
-<h4 id="合并同index的dataframe"><a href="#合并同index的dataframe" class="headerlink" title="合并同index的dataframe"></a>合并同index的dataframe</h4><p>对于这里的过程，contact可以简单的完成合并两个表的操作</p>
-<p>但是contact的第一个输入需要一个Iter，所以在将所有的数据变成一个list以后就可以用了</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">namelist = []</span><br><span class="line">pd.contact(namelist)</span><br></pre></td></tr></table></figure>
-
-<h4 id="map，apply用法"><a href="#map，apply用法" class="headerlink" title="map，apply用法"></a>map，apply用法</h4><p>对于pandas里面的东西，用map的方法进行操作可能会比直接iter好一点</p>
-<p>map的用法主要是下面这个</p>
-<p>对于这个部分，其如果不填写返回值就会直接返回空，要稍微注意一下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.map(函数名)</span><br></pre></td></tr></table></figure>
-
-<p>也可以通过这样的方法令其忽略空值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">na_action&#x3D;&#39;ignore&#39;</span><br></pre></td></tr></table></figure>
-
-<p>如果要传入参数的话，最好使用apply来进行处理</p>
-<h4 id="type相关（h4"><a href="#type相关（h4" class="headerlink" title="type相关（h4)"></a>type相关（h4)</h4><p>dtype() 获取函数里面的值</p>
-<p>astype() 获取其中的函数部分 也就是对数据类型进行转换</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">names.astype(&#39;int&#39;)</span><br></pre></td></tr></table></figure>
-
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4>
       
     </div>
 
